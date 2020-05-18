@@ -1,9 +1,9 @@
 package com.Mad1337bat;
 
-public abstract class RunningTrack extends Barrier {
+public abstract class RaceTrack extends Barrier {
     private int length;
 
-    public RunningTrack(String name, int length) {
+    public RaceTrack(String name, int length) {
         super(name);
 
         this.length = length;
@@ -15,7 +15,7 @@ public abstract class RunningTrack extends Barrier {
 
     @Override
     protected boolean moving(Actions actions) {
-        System.out.println("The road " + super.getName() + " length: " + this.length);
+        System.out.println("The racetrack " + super.getName() + " length: " + this.length);
 
         actions.run();
 

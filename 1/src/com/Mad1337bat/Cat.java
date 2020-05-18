@@ -1,6 +1,6 @@
 package com.Mad1337bat;
 
-public class Cat {
+public class Cat implements Actions {
     private String name;
     private int runDistance;
     private int jumpHeight;
